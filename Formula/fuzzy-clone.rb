@@ -5,21 +5,21 @@
 class FuzzyClone < Formula
   desc "Fuzzy clone is a fuzzy repository picker and downloader, it allows you to quickly jump between repositories you contribute to, whether you have them downloaded or not."
   homepage "https://kasperhermansen.com"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/kjuulh/fuzzy-clone/releases/download/v0.3.0/fuzzy-clone-darwin-amd64", using: CurlDownloadStrategy
-      sha256 "3ebf1a7b1df03ddff8c72b5316d9ddf3f83efefb11439ca25324ce4f6b1d6b82"
+      url "https://github.com/kjuulh/fuzzy-clone/releases/download/v0.4.0/fuzzy-clone-darwin-amd64", using: CurlDownloadStrategy
+      sha256 "6ace280546c54785a07e672f33ed20c73258939918a9c756072f95e663c0f46c"
 
       def install
         bin.install "fuzzy-clone-darwin-amd64" => "fuzzy-clone"
       end
     end
     on_arm do
-      url "https://github.com/kjuulh/fuzzy-clone/releases/download/v0.3.0/fuzzy-clone-darwin-arm64", using: CurlDownloadStrategy
-      sha256 "4a3b46e3c0438aa7446cc894bc078315ce370a0ffcafd5dd66d3b42adfbe0c79"
+      url "https://github.com/kjuulh/fuzzy-clone/releases/download/v0.4.0/fuzzy-clone-darwin-arm64", using: CurlDownloadStrategy
+      sha256 "7f0dbbd18473df5707e695cbf3b6feb1f1b97f2f5b511aed7cabeeba6267675a"
 
       def install
         bin.install "fuzzy-clone-darwin-arm64" => "fuzzy-clone"
@@ -30,8 +30,8 @@ class FuzzyClone < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kjuulh/fuzzy-clone/releases/download/v0.3.0/fuzzy-clone-linux-amd64", using: CurlDownloadStrategy
-        sha256 "f7093120b616b0f6fd62981bff4eb407753d4edab7ea8deced3de2d2ca478bc7"
+        url "https://github.com/kjuulh/fuzzy-clone/releases/download/v0.4.0/fuzzy-clone-linux-amd64", using: CurlDownloadStrategy
+        sha256 "60ef52450e6cf9ed48f5cfcf66e90ab0e9f892f05a9851ce02e5d181f9b1ca7c"
 
         def install
           bin.install "fuzzy-clone-linux-amd64" => "fuzzy-clone"
@@ -40,8 +40,8 @@ class FuzzyClone < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kjuulh/fuzzy-clone/releases/download/v0.3.0/fuzzy-clone-linux-arm64", using: CurlDownloadStrategy
-        sha256 "9f5f2421002261e8c9ff569188364381668896c6740d820b0ba5353f33d36bea"
+        url "https://github.com/kjuulh/fuzzy-clone/releases/download/v0.4.0/fuzzy-clone-linux-arm64", using: CurlDownloadStrategy
+        sha256 "1d5378b83485d52cc037d092f94b9fe15d8a61d04a2723ce745496669af5d920"
 
         def install
           bin.install "fuzzy-clone-linux-arm64" => "fuzzy-clone"
